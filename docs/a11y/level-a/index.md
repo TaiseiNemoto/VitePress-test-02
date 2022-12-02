@@ -1,0 +1,30 @@
+# JIS X 8341-3 レベルA達成基準一覧
+
+- [1.1.1　非テキストコンテンツの達成基準](https://waic.jp/docs/UNDERSTANDING-WCAG20/text-equiv-all.html)
+- [1.2.1　音声だけ及び映像だけ（収録済み）の達成基準](https://waic.jp/docs/UNDERSTANDING-WCAG20/media-equiv-av-only-alt.html)
+- [1.2.2　キャプション（収録済み）の達成基準](https://waic.jp/docs/UNDERSTANDING-WCAG20/media-equiv-av-only-alt.html)
+- [1.2.3　音声解説又はメディアに対する代替コンテンツ（収録済み）の達成基準](https://waic.jp/docs/UNDERSTANDING-WCAG20/media-equiv-audio-desc.html)
+- [1.3.1　情報及び関係性の達成基準](https://waic.jp/docs/UNDERSTANDING-WCAG20/content-structure-separation-programmatic.html)
+- [1.3.2　意味のある順序の達成基準](https://waic.jp/docs/UNDERSTANDING-WCAG20/content-structure-separation-sequence.html)
+- [1.3.3　感覚的な特徴の達成基準](https://waic.jp/docs/UNDERSTANDING-WCAG20/content-structure-separation-understanding.html)
+- [1.4.1　色の使用の達成基準](https://waic.jp/docs/UNDERSTANDING-WCAG20/visual-audio-contrast-without-color.html)
+- [1.4.2　音声の制御の達成基準準](https://waic.jp/docs/UNDERSTANDING-WCAG20/visual-audio-contrast-dis-audio.html)
+- [2.1.1　キーボードの達成基準](https://waic.jp/docs/UNDERSTANDING-WCAG20/keyboard-operation-keyboard-operable.html)
+- [2.1.2　キーボードトラップなしの達成基準](https://waic.jp/docs/UNDERSTANDING-WCAG20/keyboard-operation-trapping.html)
+- [2.2.1　タイミング調整可能の達成基準](https://waic.jp/docs/UNDERSTANDING-WCAG20/time-limits-required-behaviors.html)
+- [2.2.2　一時停止，停止及び非表示の達成基準](https://waic.jp/docs/UNDERSTANDING-WCAG20/time-limits-pause.html)
+- [2.3.1　3回のせん（閃）光，又はしきい（閾）値以下の達成基準](https://waic.jp/docs/UNDERSTANDING-WCAG20/seizure-does-not-violate.html)
+- [2.4.1　ブロックスキップの達成基準](https://waic.jp/docs/UNDERSTANDING-WCAG20/navigation-mechanisms-skip.html)
+- [2.4.2　ページタイトルの達成基準](https://waic.jp/docs/UNDERSTANDING-WCAG20/navigation-mechanisms-title.html)
+- [2.4.3　フォーカス順序の達成基準](https://waic.jp/docs/UNDERSTANDING-WCAG20/navigation-mechanisms-focus-order.html)
+- [2.4.4　リンクの目的（コンテキスト内）の達成基準](https://waic.jp/docs/UNDERSTANDING-WCAG20/navigation-mechanisms-refs.html)
+- [3.1.1　ページの言語の達成基準](https://waic.jp/docs/UNDERSTANDING-WCAG20/meaning-doc-lang-id.html)
+- [3.2.1　フォーカス時の達成基準](https://waic.jp/docs/UNDERSTANDING-WCAG20/consistent-behavior-receive-focus.html)
+- [3.2.2　入力時の達成基準](https://waic.jp/docs/UNDERSTANDING-WCAG20/consistent-behavior-unpredictable-change.html)
+- [3.3.1　エラーの特定の達成基準](https://waic.jp/docs/UNDERSTANDING-WCAG20/minimize-error-identified.html)
+- [3.3.2　ラベル又は説明の達成基準](https://waic.jp/docs/UNDERSTANDING-WCAG20/minimize-error-cues.html)
+- [4.1.1　構文解析の達成基準](v)
+- [4.1.2　名前（name），役割（role）及び値（value）の達成基準](https://waic.jp/docs/UNDERSTANDING-WCAG20/ensure-compat-parses.html)
+
+
+

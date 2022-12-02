@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/TaiseiNemoto/VitePress-test-02#readme",
   "devDependencies": {
+    "sass": "^1.56.1",
     "vitepress": "^1.0.0-alpha.29",
     "vue": "^3.2.45"
   }
