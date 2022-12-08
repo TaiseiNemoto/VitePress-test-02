@@ -9,5 +9,5 @@ const { Layout } = DefaultTheme
 		<template #aside-outline-before>
 			My custom sidebar top content
 		</template>
-  </Layout>
+	</Layout>
 </template>
