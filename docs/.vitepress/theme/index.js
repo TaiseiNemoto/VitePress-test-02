@@ -1,10 +1,10 @@
 import DefaultTheme from 'vitepress/theme'
 import './custom.css'
-// import MyLayout from './MyLayout.vue'
+import PersonList from '../../components/PersonList.vue'
 
 export default {
     ...DefaultTheme,
-    // override the Layout with a wrapper component that
-    // injects the slots
-    // Layout: MyLayout
+    enhanceApp({ app }) {
+      app.component('PersonList', PersonList);
+    }
   }

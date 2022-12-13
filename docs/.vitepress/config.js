@@ -2,6 +2,7 @@ export default {
 	lang: 'ja',
 	title: 'UX Team Dev Guide',
 	description: 'This is UX Team Development Guideline.',
+  lastUpdated: true,
   head: [
     [
       'meta',
@@ -17,6 +18,8 @@ export default {
     ],
   ],
 	themeConfig: {
+    outlineTitle: '目次',
+    lastUpdatedText: '最終更新',
     editLink: {
       pattern: 'https://github.com/',
       text: 'このページをgithubで編集'
@@ -29,7 +32,7 @@ export default {
 					{ text: 'Home', link: '/home/' },
 					{ text: 'Web Accessibility', link: '/a11y/introduction/' },
 					{ text: 'React', link: '/react/' },
-					{ text: 'Vue', link: '/vue/' }
+					{ text: 'Vue', link: '/vue/introduction/' }
 				],
 			}
 		],
@@ -41,7 +44,7 @@ export default {
             { text: 'Home', link: '/home/' },
             { text: 'Web Accessibility', link: '/a11y/introduction/' },
             { text: 'React', link: '/react/' },
-						{ text: 'Vue.js', link: '/vue/' }
+						{ text: 'Vue.js', link: '/vue/introduction/' }
           ]
         }
       ],
@@ -113,9 +116,13 @@ export default {
         {
           text: 'Vue.js',
           items: [
-            { text: 'Index', link: '/vue/' },
-            { text: 'One', link: '/vue/one' },
-            { text: 'Two', link: '/vue/two' }
+            { text: 'Vue.jsとは', link: '/vue/introduction/' },
+          ]
+        },
+        {
+          text: 'VitePress',
+          items: [
+            { text: 'VitePress', link: '/vue/vitepress/' },
           ]
         }
       ]
