@@ -24,6 +24,10 @@ export default {
       pattern: 'https://github.com/',
       text: 'このページをgithubで編集'
     },
+    docFooter: {
+      prev: '前のページ',
+      next: '次のページ'
+    },
     logo: '/logo/favicon.ico',
     nav: [
 			{

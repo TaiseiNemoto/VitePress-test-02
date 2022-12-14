@@ -7,7 +7,7 @@
             ユーザーリストがありません。
         </div>
         <ul v-else>
-            <li v-for="person in data.personList" :key="person.id">
+            <li v-for="person in data.personList" :key="person.name">
                 <p>Name：{{ person.name }}</p>
                 <p>Email：{{ person.email }}</p>
             </li>
