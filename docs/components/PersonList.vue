@@ -1,50 +1,68 @@
-<script setup>
-import { ref } from "vue";
-
-// const personList = [
-//     {
-//         "id": 1,
-//         "name": "Leanne Graham",
-//         "username": "Bret",
-//         "email": "Sincere@april.biz",
-//         "address": {
-//             "street": "Kulas Light",
-//             "suite": "Apt. 556",
-//             "city": "Gwenborough",
-//             "zipcode": "92998-3874",
-//             "geo": {
-//             "lat": "-37.3159",
-//             "lng": "81.1496"
-//             }
-//         },
-//         "phone": "1-770-736-8031 x56442",
-//         "website": "hildegard.org",
-//         "company": {
-//             "name": "Romaguera-Crona",
-//             "catchPhrase": "Multi-layered client-server neural-net",
-//             "bs": "harness real-time e-markets"
-//         }
-//     }
-// ];
-const personList = ref([]);
-
-const getPersonList = () => {
-    personList
-}
-</script>
-
 <template>
-    <div>
-        <button>ユーザーリストを取得</button>
+    <div class="buttonBox">
+        <button @click="getPersonList">ユーザーリストを取得</button>
     </div>
-    <div>
-        <ul>
-            <li v-for="person in personList" :key="person.id">
+    <div class="listBox">
+        <div v-if="!data.personList.length">
+            ユーザーリストがありません。
+        </div>
+        <ul v-else>
+            <li v-for="person in data.personList" :key="person.id">
                 <p>Name：{{ person.name }}</p>
+                <p>Email：{{ person.email }}</p>
             </li>
         </ul>
     </div>
 </template>
 
+<script setup>
+import { reactive } from "vue";
+import axios from "axios";
+
+const url = 'https://jsonplaceholder.typicode.com/users'
+const data = reactive({
+    personList: []
+});
+
+const getPersonList = () => {
+    axios.get(url)
+    .then(function (res) {
+        data.personList = res.data.map(person => {
+            return {
+                name: person.name,
+                email: person.email
+            }
+        })
+    })
+    .catch(function (error) {
+        console.log(error);
+    });
+}
+</script>
+
 <style scoped lang="scss">
+.buttonBox {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+button {
+    height: 40px;
+    width: 200px;
+    color: var(--vp-c-brand);
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.listBox {
+    display: flex;
+    justify-content: center;
+
+    li {
+        list-style: none;
+    }
+}
 </style>

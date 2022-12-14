@@ -121,8 +121,28 @@ This is a details block.
 :::
 
 
-## Markdown内でコンポーネントを読み込む
+## Markdown内でVueを使ってみる
 ```
 <PersonList />
 ```
 <PersonList />
+
+## VuePress vs VitePress
+
+VuePressとVitePressはどちらもVueを利用したSSGであり、どちらもマークダウンから静的サイトが作成できるという点で似ていますが、以下の違いがあります。
+
+### VitePress
+- Viteのみのサポート
+- シンプルで最小限な構成になっており、カスタマイズはVueまたはViteで行う
+- デフォルトのデザインが、VuePressに比べてより洗練されている。（根本の主観）
+
+### VuePress 
+- webpackとViteを両方サポートしている
+- 固有のプラグインシステムがあり、VitePressと比べてカスタマイズ性が高い
+
+[VitePressは次世代のVuePressとなるのか](https://github.com/vuejs/vitepress/discussions/548)
+## 参考情報
+[vitepress.vuejs.org](https://vitepress.vuejs.org/)<br>
+[github](https://github.com/vuejs/vitepress/discussions/548)<br>
+[v1.vuepress.vuejs.org](https://v1.vuepress.vuejs.org/)<br>
+[vuejs.org](https://vuejs.org)
