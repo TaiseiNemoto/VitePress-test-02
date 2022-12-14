@@ -37,3 +37,16 @@
   - 見出しに、標準的なテキストの書式の表現法を使用する（T3）
 
 ## 実装ガイドライン
+header, main, nav, footer等の要素が適切に用いられている。または、これらがrole属性で明示されている。
+role="search"については、対応するHTML要素がないので、明確に意味づけするのであればrole="search"が必要です。
+```HTML
+<header></header>// ページのヘッダー領域（ページ内に1つ）
+<footer></footer>// ページのフッター領域（ページ内に1つ）
+<main></main> // メインコンテンツ領域（ページ内に1つ）
+<aside></aside>//補足のコンテンツ（サイドバー等）
+<nav></nav>//ナビゲーション
+<section></section>//汎用的なランドマーク
+<form></form>//フォーム
+
+<form role="search"></form>
+```
