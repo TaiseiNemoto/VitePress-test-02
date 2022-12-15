@@ -37,8 +37,8 @@
   - 見出しに、標準的なテキストの書式の表現法を使用する（T3）
 
 ## 実装ガイドライン
-header, main, nav, footer等の要素が適切に用いられている。または、これらがrole属性で明示されている。
-role="search"については、対応するHTML要素がないので、明確に意味づけするのであればrole="search"が必要です。
+`header`, `main`, `nav`, `footer`等の要素を適切に利用する。または、これらがrole属性で明示されている。
+`role="search"`については、対応するHTML要素がないので、明確に意味づけするのであればrole="search"が必要です。
 ```HTML
 <header></header>// ページのヘッダー領域（ページ内に1つ）
 <footer></footer>// ページのフッター領域（ページ内に1つ）
@@ -49,4 +49,26 @@ role="search"については、対応するHTML要素がないので、明確に
 <form></form>//フォーム
 
 <form role="search"></form>
+```
+リスト又はリンクのグループに、`ul`、`ol`、`dl`を用いる。
+```HTML
+<ol>
+  <li>Mix eggs and milk in a bowl.</li>
+</ol>
+
+<ul>
+  <li>Milk</li>
+</ul>
+
+<dl>
+  <dt>blink</dt>
+  <dd>turn on and off between .5 and 3 times per second
+  </dd>
+</dl> 
+```
+
+`h1`～`h6`要素を使い、コンテンツの見出しをセマンティックにする。
+```HTML
+<h1>Plant Foods that Humans Eat</h1>
+<p>There are an abundant number of plants that humans eat...</p>
 ```
