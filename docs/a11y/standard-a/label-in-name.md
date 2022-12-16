@@ -6,3 +6,7 @@
 - アクセシブルな名前 (accessible name) の一部として可視ラベルのテキストを含める（G208）
 - アクセシブルな名前 (accessible name) を視覚的なラベルと一致させる（G211）
 ## 実装ガイドライン
+可視ラベルとアクセシブルな名前を一致させる
+```HTML
+<button aria-label="search">search</button>
+```

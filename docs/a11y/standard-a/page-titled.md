@@ -5,3 +5,13 @@
 ## 達成方法
 title要素を用いて、ウェブページに説明的なページタイトルを提供する（G88）（H25）
 ## 実装ガイドライン
+ title要素に、各ページのタイトルを設定する。
+```HTML
+<html>   
+   <head>     
+      <title>Title</title>     
+   </head>   
+   <body>     
+   </body> 
+</html>  
+```
